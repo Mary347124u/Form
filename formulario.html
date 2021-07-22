@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+        <title>Form</title>
+    </head>
+
+
+    
+    <body background="https://cdn.pixabay.com/photo/2020/09/06/09/59/hospital-5548564_1280.png">  
+        <div id= "total">
+
+        <div>
+            <h1 id="titulo">FICHA DO PACIENTE</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+            <div class="campo">
+                <label><strong>Doenças crônicas</strong></label>
+                <label>
+                   
+                <label>
+                    <input type="radio" name="doeca" value="diabetes">Diabetes
+                </label>
+                <label>
+                    <input type="radio" name="doeca" value="outras">Outras
+                </label>
+                <label>
+                    <input type="radio" name="doeca" value="nenhuma">Nenhuma
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for=" Tipo"><strong> Tipo Sanguíneo</strong></label>
+                <select id="estado" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>O+</option>
+                  <option>O-</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                  <option>Não sei</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione os sintomas:</strong></label><br><br>
+                    <input type="checkbox" id="sintoma1" name="sintoma1" value="Febre">
+                    <label for="sintoma1"> Febre</label>
+                    <input type="checkbox" id="sintoma2" name="sintoma2" value="Coriza">
+                    <label for="sintoma2"> Coriza</label>
+                    <input type="checkbox" id="sintoma3" name="sintoma3" value="Espirro">
+                    <label for="sintoma3"> Espirro</label>
+                    <input type="checkbox" id="sintoma4" name="sintoma4" value="Dor no peito">
+                    <label for="sintoma4"> Dor no peito</label>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Avalie sua experiência no hospital: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+   
+    </div>
+    </body>
+
+</html>
+
+
+
+
